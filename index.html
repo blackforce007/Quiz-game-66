@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Black Force 007 - সাধারণ জ্ঞান কুইজ</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Black Force 007 - সাধারণ জ্ঞান কুইজ</h1>
+        <div id="scoreboard">
+            <span id="score">স্কোর: 0</span>
+            <span id="correct">সঠিক: 0</span>
+            <span id="wrong">ভুল: 0</span>
+        </div>
+        <button id="startBtn">শুরু করুন</button>
+    </header>
+
+    <section id="quiz-section" class="hidden">
+        <div id="question-container">
+            <div id="question-box">
+                <div id="question"></div>
+                <div id="options"></div>
+            </div>
+        </div>
+        <div id="timer">সময়: <span id="timeRemaining">15</span> সেকেন্ড</div>
+        <div id="feedback"></div>
+        <button id="nextBtn" class="hidden">পরবর্তী প্রশ্ন</button>
+    </section>
+
+    <section id="result-section" class="hidden">
+        <h2>ফলাফল</h2>
+        <p id="final-score"></p>
+        <p id="final-time"></p>
+        <p id="correct-count"></p>
+        <p id="wrong-count"></p>
+        <button id="restartBtn">আবার খেলুন</button>
+    </section>
+
+    <!-- লিডারবোর্ড -->
+    <section id="leaderboard-section" class="hidden">
+        <h2>লিডারবোর্ড</h2>
+        <div id="leaderboard"></div>
+        <button id="closeLeaderboard">বন্ধ করুন</button>
+    </section>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
